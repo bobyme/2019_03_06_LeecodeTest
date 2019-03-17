@@ -7,9 +7,10 @@
 //
 
 #include <stdio.h>
+#include "002_Add_Two_Numbers.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
+    test002();
     return 0;
 }
