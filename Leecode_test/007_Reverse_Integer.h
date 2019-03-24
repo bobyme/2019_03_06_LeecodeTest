@@ -10,5 +10,6 @@
 #define _07_Reverse_Integer_h
 
 #include <stdio.h>
-
+#include <math.h>
+void test007(void);
 #endif /* _07_Reverse_Integer_h */
