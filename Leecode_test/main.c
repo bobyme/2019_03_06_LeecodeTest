@@ -11,6 +11,10 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    int a=-100;
+    int b,c,d=0;
+    b=10;
     test002();
+
     return 0;
 }
