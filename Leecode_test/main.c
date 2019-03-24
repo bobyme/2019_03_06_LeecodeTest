@@ -11,9 +11,12 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int a=-100;
-    int b,c,d=0;
-    b=10;
+    int a=-123;
+    int b,c=0;
+    b=a%10;
+    a=a/10;
+    c=a%10;
+    printf("b:%d,c:%d\n",b,c);
     test002();
 
     return 0;
