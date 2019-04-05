@@ -8,25 +8,28 @@
 
 #include "011_Container_With_Most_Water.h"
 int maxArea(int* height, int heightSize) {
-    int i,j=0;
+    int i=0;
+    int j=heightSize-1;
     int maxarea=0;
-    int temparea,temphigh,tempwidth=0;
-    for(i=0;i<heightSize-1;i++)
+    int temparea=0;
+    int temphigh=0;
+    int tempwidth=0;
+    while(i!=j)
     {
-        for(j=i+1;j<heightSize;j++){
-            tempwidth=j-i;
-            if((*(height+i))>(*(height+j))){
-                temphigh=*(height+j);
-            }
-            else{
-                temphigh=*(height+i);
-            }
-            
-            temparea=temphigh*tempwidth;
-            if (temparea>maxarea)
-            {
-                maxarea=temparea;
-            }
+        tempwidth=j-i;
+        if((*(height+i))>(*(height+j))){
+            temphigh=*(height+j);
+            j--;
+        }
+        else{
+            temphigh=*(height+i);
+            i++;
+        }
+        temparea=temphigh*tempwidth;
+        printf("i:%d,j:%d,temparear:%d\n",i,j,temparea);
+        if (temparea>maxarea)
+        {
+            maxarea=temparea;
         }
     }
     return maxarea;
