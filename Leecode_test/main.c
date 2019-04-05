@@ -9,10 +9,11 @@
 #include <stdio.h>
 #include "002_Add_Two_Numbers.h"
 #include "011_Container_With_Most_Water.h"
+#include "070_Climbing_Stairs.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     //test007();
-    test011();
+    test070();
     return 0;
 }
