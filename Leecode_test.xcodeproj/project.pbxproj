@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4006377E2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c in Sources */ = {isa = PBXBuildFile; fileRef = 4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */; };
 		4006378122570ECC00B8E5B5 /* 070_Climbing_Stairs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4006378022570ECC00B8E5B5 /* 070_Climbing_Stairs.c */; };
+		40063784225842F100B8E5B5 /* 027_Remove_Element.c in Sources */ = {isa = PBXBuildFile; fileRef = 40063783225842F100B8E5B5 /* 027_Remove_Element.c */; };
 		401A20A82246537F006CC82A /* 007_Reverse_Integer.c in Sources */ = {isa = PBXBuildFile; fileRef = 401A20A72246537F006CC82A /* 007_Reverse_Integer.c */; };
 		40350AB1223CF4B000337164 /* 002_Add_Two_Numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 40350AB0223CF4B000337164 /* 002_Add_Two_Numbers.c */; };
 		40350AB4223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c in Sources */ = {isa = PBXBuildFile; fileRef = 40350AB3223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c */; };
@@ -32,6 +33,8 @@
 		4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 011_Container_With_Most_Water.c; sourceTree = "<group>"; };
 		4006377F22570ECC00B8E5B5 /* 070_Climbing_Stairs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 070_Climbing_Stairs.h; sourceTree = "<group>"; };
 		4006378022570ECC00B8E5B5 /* 070_Climbing_Stairs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 070_Climbing_Stairs.c; sourceTree = "<group>"; };
+		40063782225842F100B8E5B5 /* 027_Remove_Element.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 027_Remove_Element.h; sourceTree = "<group>"; };
+		40063783225842F100B8E5B5 /* 027_Remove_Element.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 027_Remove_Element.c; sourceTree = "<group>"; };
 		401A20A62246537F006CC82A /* 007_Reverse_Integer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 007_Reverse_Integer.h; sourceTree = "<group>"; };
 		401A20A72246537F006CC82A /* 007_Reverse_Integer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 007_Reverse_Integer.c; sourceTree = "<group>"; };
 		40350AAF223CF4B000337164 /* 002_Add_Two_Numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 002_Add_Two_Numbers.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 		40DA4C502230177D003753CA /* Leecode_test */ = {
 			isa = PBXGroup;
 			children = (
+				40063782225842F100B8E5B5 /* 027_Remove_Element.h */,
+				40063783225842F100B8E5B5 /* 027_Remove_Element.c */,
 				4006377F22570ECC00B8E5B5 /* 070_Climbing_Stairs.h */,
 				4006378022570ECC00B8E5B5 /* 070_Climbing_Stairs.c */,
 				4006377C2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.h */,
@@ -143,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40063784225842F100B8E5B5 /* 027_Remove_Element.c in Sources */,
 				4006378122570ECC00B8E5B5 /* 070_Climbing_Stairs.c in Sources */,
 				40350AB1223CF4B000337164 /* 002_Add_Two_Numbers.c in Sources */,
 				401A20A82246537F006CC82A /* 007_Reverse_Integer.c in Sources */,
