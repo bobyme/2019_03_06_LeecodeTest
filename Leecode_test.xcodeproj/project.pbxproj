@@ -13,6 +13,7 @@
 		401A20A82246537F006CC82A /* 007_Reverse_Integer.c in Sources */ = {isa = PBXBuildFile; fileRef = 401A20A72246537F006CC82A /* 007_Reverse_Integer.c */; };
 		40350AB1223CF4B000337164 /* 002_Add_Two_Numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 40350AB0223CF4B000337164 /* 002_Add_Two_Numbers.c */; };
 		40350AB4223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c in Sources */ = {isa = PBXBuildFile; fileRef = 40350AB3223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c */; };
+		40871BFB225A2C5300D393AA /* 054_Spiral_Matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 40871BFA225A2C5300D393AA /* 054_Spiral_Matrix.c */; };
 		40DA4C522230177D003753CA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 40DA4C512230177D003753CA /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		40350AB0223CF4B000337164 /* 002_Add_Two_Numbers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 002_Add_Two_Numbers.c; sourceTree = "<group>"; };
 		40350AB2223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 004_Median_of_Two_Sorted_Arrays.h; sourceTree = "<group>"; };
 		40350AB3223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 004_Median_of_Two_Sorted_Arrays.c; sourceTree = "<group>"; };
+		40871BF9225A2C5300D393AA /* 054_Spiral_Matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 054_Spiral_Matrix.h; sourceTree = "<group>"; };
+		40871BFA225A2C5300D393AA /* 054_Spiral_Matrix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 054_Spiral_Matrix.c; sourceTree = "<group>"; };
 		40DA4C4E2230177D003753CA /* Leecode_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Leecode_test; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA4C512230177D003753CA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +78,8 @@
 		40DA4C502230177D003753CA /* Leecode_test */ = {
 			isa = PBXGroup;
 			children = (
+				40871BF9225A2C5300D393AA /* 054_Spiral_Matrix.h */,
+				40871BFA225A2C5300D393AA /* 054_Spiral_Matrix.c */,
 				40063782225842F100B8E5B5 /* 027_Remove_Element.h */,
 				40063783225842F100B8E5B5 /* 027_Remove_Element.c */,
 				4006377F22570ECC00B8E5B5 /* 070_Climbing_Stairs.h */,
@@ -151,6 +156,7 @@
 				40063784225842F100B8E5B5 /* 027_Remove_Element.c in Sources */,
 				4006378122570ECC00B8E5B5 /* 070_Climbing_Stairs.c in Sources */,
 				40350AB1223CF4B000337164 /* 002_Add_Two_Numbers.c in Sources */,
+				40871BFB225A2C5300D393AA /* 054_Spiral_Matrix.c in Sources */,
 				401A20A82246537F006CC82A /* 007_Reverse_Integer.c in Sources */,
 				4006377E2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c in Sources */,
 				40350AB4223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c in Sources */,

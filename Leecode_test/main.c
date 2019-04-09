@@ -10,10 +10,12 @@
 #include "002_Add_Two_Numbers.h"
 #include "011_Container_With_Most_Water.h"
 #include "070_Climbing_Stairs.h"
+#include "054_Spiral_Matrix.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     //test007();
-    test027();
+    //test027();
+    test054();
     return 0;
 }
