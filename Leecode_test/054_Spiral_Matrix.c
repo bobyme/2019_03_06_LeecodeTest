@@ -7,59 +7,81 @@
 //
 
 #include "054_Spiral_Matrix.h"
+
 int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize) {
-    //（CS，RS）向右走，走到（CL，RS）,Cidx++
-    //（CL，RS）向下走，走到（CL，RL）,CL--
-    //（CL，RL）向左走，走到（CS，RL）,RL--
-    //（CS，RL）向上走，走到（CS，RS）,CS++
+    //（CSmall，RSmall）向右走，走到（CMax，RSmall）,Cidx++
+    //（CMax，RSmall）向下走，走到（CMax，RMax）,CMax--
+    //（CMax，RMax）向左走，走到（CSmall，RMax）,RMax--
+    //（CSmall，RMax）向上走，走到（CSmall，RSmall）,CSmall++
     int direct=0; //0:right,1:down,2:left,3:up
-    int cs=0;
-    int rs=0;
-    int cl=matrixColSize;
-    int rl=matrixRowSize;
+    int CSmall=0;
+    int RSmall=0;
+    int CMax=matrixColSize-1;
+    int RMax=matrixRowSize-1;
     int ridx=0;
     int cidx=0;
     int i=0;
+ 
     int *pt;
     int totalLength=matrixColSize*matrixRowSize;
-    pt = malloc(totalLength * sizeof(int));
+    pt = malloc(totalLength*sizeof(int));
+
+    
     while(i<totalLength){
         switch (direct) {
             case 0: //right
-                *(pt+i)=*(*(matrix+ridx)+cidx);
+                *(pt+i)=(*(*(matrix+ridx)+cidx));
+ 
+                printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 cidx++;
-                printf("direct:%d,value:%d",direct,*(pt+i));
-                if(cidx==cl){
+                if(cidx>CMax){
                     direct=1;
-                    rs++;
+                    cidx=CMax;
+                    RSmall++;
+                    ridx++;
+                    printf("Rmax:%d,RSmal:%d,CMax:%d,CSmal:%d\n",RMax,RSmall,CMax,CSmall);
                 }
 
                 break;
             case 1: //down
                 *(pt+i)=*(*(matrix+ridx)+cidx);
+               // *(pt+i)=(*((matrix+ridx)+cidx));
+                printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 ridx++;
-                printf("direct:%d,value:%d",direct,*(pt+i));
-                if(ridx==rl){
+                //printf("direct:%d,value:%d\n",direct,*(pt+i));
+                if(ridx>RMax){
                     direct=2;
-                    cl--;
+                    ridx=RMax;
+                    CMax--;
+                    cidx--;
+                    printf("Rmax:%d,RSmal:%d,CMax:%d,CSmal:%d\n",RMax,RSmall,CMax,CSmall);
                 }
                 break;
             case 2: //left
                 *(pt+i)=*(*(matrix+ridx)+cidx);
+                
+                printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 cidx--;
-                printf("direct:%d,value:%d",direct,*(pt+i));
-                if(cidx==cs){
+                if(cidx<CSmall){
                     direct=3;
-                    rs++;
+                    cidx=CSmall;
+                    RMax--;
+                    ridx--;
+                    
+                    printf("Rmax:%d,RSmal:%d,CMax:%d,CSmal:%d\n",RMax,RSmall,CMax,CSmall);
                 }
                 break;
             case 3: //up
                 *(pt+i)=*(*(matrix+ridx)+cidx);
+                
+                printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 ridx--;
-                printf("direct:%d,value:%d",direct,*(pt+i));
-                if(ridx==rs){
+                if(ridx<RSmall){
                     direct=0;
-                    cs++;
+                    ridx=RSmall;
+                    CSmall++;
+                    cidx++;
+                    printf("Rmax:%d,RSmal:%d,CMax:%d,CSmal:%d\n",RMax,RSmall,CMax,CSmall);
                 }
                 break;
             default:
@@ -67,11 +89,28 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize) {
         }
         i++;
     }
+    
     return pt;
 }
+
 void test054(void){
     int *ans;
-    int input={{ 1, 2, 3 },{ 4, 5, 6 },{ 7, 8, 9 }};
-    ans=spiralOrder(input,3,3);
+    int i,j;
+    //int **ptr;
+    int array[3][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+    int *ptr[3] = {array[0], array[1], array[2]};
+
+/*
+    for(i=0;i<3;i++){
+        printf("no:%d\n",**(ptr+i));
+    }
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("input:%d\n",*(*(ptr+i)+j));
+        }
+        
+    }
+*/
+    ans=spiralOrder(ptr,3,4);
 
 }
