@@ -11,11 +11,16 @@
 #include "011_Container_With_Most_Water.h"
 #include "070_Climbing_Stairs.h"
 #include "054_Spiral_Matrix.h"
+#include "136_Single_Number.h"
+#include "189_Rotate_Array.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     //test007();
     //test027();
-    test054();
+    //test054();
+    //test136();
+    test189();
     return 0;
 }
+

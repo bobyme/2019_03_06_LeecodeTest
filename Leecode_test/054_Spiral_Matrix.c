@@ -31,7 +31,6 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize) {
         switch (direct) {
             case 0: //right
                 *(pt+i)=(*(*(matrix+ridx)+cidx));
- 
                 printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 cidx++;
                 if(cidx>CMax){
@@ -45,10 +44,8 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize) {
                 break;
             case 1: //down
                 *(pt+i)=*(*(matrix+ridx)+cidx);
-               // *(pt+i)=(*((matrix+ridx)+cidx));
                 printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 ridx++;
-                //printf("direct:%d,value:%d\n",direct,*(pt+i));
                 if(ridx>RMax){
                     direct=2;
                     ridx=RMax;
@@ -59,7 +56,6 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize) {
                 break;
             case 2: //left
                 *(pt+i)=*(*(matrix+ridx)+cidx);
-                
                 printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 cidx--;
                 if(cidx<CSmall){
@@ -73,7 +69,6 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize) {
                 break;
             case 3: //up
                 *(pt+i)=*(*(matrix+ridx)+cidx);
-                
                 printf("direct:%d,ridx:%d,cidx:%d,value:%d\n",direct,ridx,cidx,*(pt+i));
                 ridx--;
                 if(ridx<RSmall){
@@ -89,28 +84,15 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize) {
         }
         i++;
     }
-    
     return pt;
 }
 
 void test054(void){
     int *ans;
     int i,j;
-    //int **ptr;
     int array[3][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
     int *ptr[3] = {array[0], array[1], array[2]};
 
-/*
-    for(i=0;i<3;i++){
-        printf("no:%d\n",**(ptr+i));
-    }
-    for(i=0;i<3;i++){
-        for(j=0;j<3;j++){
-            printf("input:%d\n",*(*(ptr+i)+j));
-        }
-        
-    }
-*/
     ans=spiralOrder(ptr,3,4);
 
 }
