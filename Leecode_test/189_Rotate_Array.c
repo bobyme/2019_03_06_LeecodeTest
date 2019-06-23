@@ -8,47 +8,38 @@
 
 #include "189_Rotate_Array.h"
 
-
-void rotate(int* nums, int numsSize, int k){
+void reverse_p(int* nums,int numSize){
     int i=0;
-    int j=0;
-    int second_loop=0;
-    int quotient=0;
-    int remainder=0;
-    int swap_idx=0;
-    int swap_idx_next=0;
-    int temp;
-    int temp_next;
-    if(k==0){
-        return;
+    int temp=0;
+    int step=(numSize-(numSize%2))/2;
+    for(i=0;i<step;i++){
+        temp=*(nums+(numSize-i-1));
+        *(nums+(numSize-i-1))=*(nums+i);
+        *(nums+i)=temp;
     }
-    else{
-        quotient=numsSize/k;
-        remainder  =numsSize%k;
-        printf("quotient:%d,remainder:%d\n",quotient,remainder);
-        for(i=0;i<k;i++){
-            second_loop=(i<remainder)?(quotient+1):(quotient);
-            swap_idx=i;
-            temp=*(nums+swap_idx);
-            for(j=0;j<second_loop;j++){
-                swap_idx_next=(swap_idx+k)%numsSize;
-                temp_next=*(nums+swap_idx_next);
-                printf("i:%d,j:%d,",i,j);
-                printf("Swap_idx:%d;temp:%d;temp_next:%d\n",swap_idx,temp,temp_next);
-                *(nums+swap_idx_next)=temp;
-                swap_idx=swap_idx_next;
-                temp=temp_next;
-            }
-        }
-        
+    for(i=0;i<numSize;i++){
+        printf("ans%d:%d\n",i,*(nums+i));
     }
-
+    printf("========\n");
 }
+    
+void rotate(int* nums, int numsSize, int k){
+    int reverse_size=0;
+    //1st part
+    reverse_size=numsSize-k;
+    reverse_p(nums, reverse_size);
+    //2nd part
+    reverse_size=k;
+    reverse_p((nums+(numsSize-k)), reverse_size);
+    reverse_p(nums,numsSize);
+}
+    
 void test189(void){
     int test[]={0,1,2,3,4,5,6};
     int length=7;
-    int shift=3;
+    int shift=1;
     int i=0;
+    //reverse_p(test,length);
     rotate(test,length,shift);
     for(i=0;i<length;i++){
         printf("ans%d:%d\n",i,test[i]);
