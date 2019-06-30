@@ -25,6 +25,10 @@ void reverse_p(int* nums,int numSize){
     
 void rotate(int* nums, int numsSize, int k){
     int reverse_size=0;
+    if (k>=numsSize)
+    {
+        k=k%numsSize;
+    }
     //1st part
     reverse_size=numsSize-k;
     reverse_p(nums, reverse_size);
