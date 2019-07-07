@@ -13,6 +13,7 @@
 #include "054_Spiral_Matrix.h"
 #include "136_Single_Number.h"
 #include "189_Rotate_Array.h"
+#include "350_Intersection_of_Two_Arrays_2.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -20,7 +21,8 @@ int main(int argc, const char * argv[]) {
     //test027();
     //test054();
     //test136();
-    test189();
+    //test189();
+    test350();
     return 0;
 }
 

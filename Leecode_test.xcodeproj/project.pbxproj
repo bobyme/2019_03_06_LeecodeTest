@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2411AA7022BF08420057F972 /* 136_Single_Number.c in Sources */ = {isa = PBXBuildFile; fileRef = 2411AA6C22BF08410057F972 /* 136_Single_Number.c */; };
+		2411AA7122BF08420057F972 /* 189_Rotate_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 2411AA6F22BF08420057F972 /* 189_Rotate_Array.c */; };
+		2411AA7422C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2411AA7322C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c */; };
 		4006377E2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c in Sources */ = {isa = PBXBuildFile; fileRef = 4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */; };
 		4006378122570ECC00B8E5B5 /* 070_Climbing_Stairs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4006378022570ECC00B8E5B5 /* 070_Climbing_Stairs.c */; };
 		40063784225842F100B8E5B5 /* 027_Remove_Element.c in Sources */ = {isa = PBXBuildFile; fileRef = 40063783225842F100B8E5B5 /* 027_Remove_Element.c */; };
@@ -30,6 +33,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2411AA6C22BF08410057F972 /* 136_Single_Number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 136_Single_Number.c; sourceTree = "<group>"; };
+		2411AA6D22BF08410057F972 /* 189_Rotate_Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 189_Rotate_Array.h; sourceTree = "<group>"; };
+		2411AA6E22BF08410057F972 /* 136_Single_Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 136_Single_Number.h; sourceTree = "<group>"; };
+		2411AA6F22BF08420057F972 /* 189_Rotate_Array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 189_Rotate_Array.c; sourceTree = "<group>"; };
+		2411AA7222C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 350_Intersection_of_Two_Arrays_2.h; sourceTree = "<group>"; };
+		2411AA7322C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 350_Intersection_of_Two_Arrays_2.c; sourceTree = "<group>"; };
 		4006377C2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 011_Container_With_Most_Water.h; sourceTree = "<group>"; };
 		4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 011_Container_With_Most_Water.c; sourceTree = "<group>"; };
 		4006377F22570ECC00B8E5B5 /* 070_Climbing_Stairs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 070_Climbing_Stairs.h; sourceTree = "<group>"; };
@@ -87,6 +96,12 @@
 				4006377C2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.h */,
 				4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */,
 				40DA4C512230177D003753CA /* main.c */,
+				2411AA6C22BF08410057F972 /* 136_Single_Number.c */,
+				2411AA6E22BF08410057F972 /* 136_Single_Number.h */,
+				2411AA6F22BF08420057F972 /* 189_Rotate_Array.c */,
+				2411AA7222C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.h */,
+				2411AA7322C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c */,
+				2411AA6D22BF08410057F972 /* 189_Rotate_Array.h */,
 				40350AB2223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.h */,
 				40350AB3223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c */,
 				40350AAF223CF4B000337164 /* 002_Add_Two_Numbers.h */,
@@ -155,11 +170,14 @@
 			files = (
 				40063784225842F100B8E5B5 /* 027_Remove_Element.c in Sources */,
 				4006378122570ECC00B8E5B5 /* 070_Climbing_Stairs.c in Sources */,
+				2411AA7022BF08420057F972 /* 136_Single_Number.c in Sources */,
 				40350AB1223CF4B000337164 /* 002_Add_Two_Numbers.c in Sources */,
 				40871BFB225A2C5300D393AA /* 054_Spiral_Matrix.c in Sources */,
+				2411AA7122BF08420057F972 /* 189_Rotate_Array.c in Sources */,
 				401A20A82246537F006CC82A /* 007_Reverse_Integer.c in Sources */,
 				4006377E2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c in Sources */,
 				40350AB4223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c in Sources */,
+				2411AA7422C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c in Sources */,
 				40DA4C522230177D003753CA /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
