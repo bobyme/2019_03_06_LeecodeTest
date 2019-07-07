@@ -29,7 +29,7 @@ void bubbleSort(int* ar, int n)
         swapped = 0;
         for (j = i; j <n-1; j++)
         {
-            printf("sort i:%d,j:%d\n",i,j);
+            //printf("sort i:%d,j:%d\n",i,j);
             if (*(ar+j) < *(ar+(j+1)))
             {
                 //printf("before sort 1st:%d,2nd:%d\n",*(ar+j),*(ar+j+1));
@@ -45,9 +45,9 @@ void bubbleSort(int* ar, int n)
             break;
         }
     }
-    for(i=0;i<n;i++){
-        printf("test bubble sort, data %d:%d\n",i,*(ar+i));
-    }
+    //for(i=0;i<n;i++){
+    //    printf("test bubble sort, data %d:%d\n",i,*(ar+i));
+    //}
 
 }
 
@@ -91,12 +91,12 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
     for(i=0;i<nums1Size;i++){
 
         for(j=0;j<nums2Size;j++){
-            printf("i:%d,J:%d\n",i,j);
-            printf("comare:%d,be_compared:%d\n",*(nums1+j),*(nums2+j));
+            //printf("i:%d,J:%d\n",i,j);
+            //printf("comare:%d,be_compared:%d\n",*(nums1+j),*(nums2+j));
             if(*(nums1+i)==*(nums2+j)){
                 
                 num[match_size] = nums1[i];
-                printf("match,num[%d]:%d\n",match_size,num[match_size]);
+                //printf("match,num[%d]:%d\n",match_size,num[match_size]);
                 match_size++;
                 nums2 = delete_data(nums2, nums2Size, j);//删除已经找到的元素
                 nums2Size--;
