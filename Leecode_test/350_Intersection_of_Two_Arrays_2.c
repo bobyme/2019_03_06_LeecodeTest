@@ -24,13 +24,13 @@ void bubbleSort(int* ar, int n)
     int i, j;
     int swapped=0;
     printf("n:%d\n",n);
-    for (i = 0; i<n-1; i++)
+    for (i = n-1; i>0; i--)
     {
         swapped = 0;
-        for (j = i; j <n-1; j++)
+        for (j = 0; j <i; j++)
         {
             //printf("sort i:%d,j:%d\n",i,j);
-            if (*(ar+j) < *(ar+(j+1)))
+            if (*(ar+j) > *(ar+(j+1)))
             {
                 //printf("before sort 1st:%d,2nd:%d\n",*(ar+j),*(ar+j+1));
                 swap((ar+j),(ar+(j+1)));
@@ -40,14 +40,16 @@ void bubbleSort(int* ar, int n)
         }
         
         // IF no two elements were swapped by inner loop, then break
+        /*
         if (swapped == 0){
             printf("break, i:%d,j:%d\n",i,j);
             break;
         }
+        */
     }
-    //for(i=0;i<n;i++){
-    //    printf("test bubble sort, data %d:%d\n",i,*(ar+i));
-    //}
+    for(i=0;i<n;i++){
+        printf("test bubble sort, data %d:%d\n",i,*(ar+i));
+    }
 
 }
 
@@ -65,7 +67,6 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
     int i=0;
     int j=0;
     int match_size=0;
-    int max_match_size=0;
     int *temp;
     int temp_size=0;
     int *rev;
@@ -73,8 +74,8 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
         *returnSize = 0;
         return NULL;
     }
-    bubbleSort(nums1, nums1Size);
-    bubbleSort(nums2, nums2Size);
+    //bubbleSort(nums1, nums1Size);
+    //bubbleSort(nums2, nums2Size);
     
     if(nums1Size<nums2Size){
         temp=nums2;
@@ -89,7 +90,6 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
         num[i] = 0;
     match_size=0;
     for(i=0;i<nums1Size;i++){
-
         for(j=0;j<nums2Size;j++){
             //printf("i:%d,J:%d\n",i,j);
             //printf("comare:%d,be_compared:%d\n",*(nums1+j),*(nums2+j));
@@ -117,9 +117,9 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
 
 void test350(void){
     int b[]={5,3,2,4,1};
-    int a[]={1,5,9};
+    int a[]={5,9};
     int b_size=5;
-    int a_size=3;
+    int a_size=2;
     int *ans=NULL;
     int ans_size=0;
     int i=0;

@@ -14,6 +14,7 @@
 #include "136_Single_Number.h"
 #include "189_Rotate_Array.h"
 #include "350_Intersection_of_Two_Arrays_2.h"
+#include "122_Best_Time_to_Buy_and_Sell_Stock_2.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -22,7 +23,7 @@ int main(int argc, const char * argv[]) {
     //test054();
     //test136();
     //test189();
-    test350();
+    test122();
     return 0;
 }
 
