@@ -15,6 +15,8 @@
 #include "189_Rotate_Array.h"
 #include "350_Intersection_of_Two_Arrays_2.h"
 #include "122_Best_Time_to_Buy_and_Sell_Stock_2.h"
+#include "026_Remove_Duplicates_from_Sorted_Array.h"
+#include "066_Plus_One.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -23,7 +25,9 @@ int main(int argc, const char * argv[]) {
     //test054();
     //test136();
     //test189();
-    test122();
+    //test026();
+    //test217();
+    test066();
     return 0;
 }
 

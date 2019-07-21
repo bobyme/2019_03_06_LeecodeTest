@@ -11,6 +11,9 @@
 		2411AA7122BF08420057F972 /* 189_Rotate_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 2411AA6F22BF08420057F972 /* 189_Rotate_Array.c */; };
 		2411AA7422C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2411AA7322C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c */; };
 		2411AA7722E0AE4A0057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2411AA7622E0AE490057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.c */; };
+		2411AA7A22E0C5AB0057F972 /* 026_Remove_Duplicates_from_Sorted_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 2411AA7922E0C5AB0057F972 /* 026_Remove_Duplicates_from_Sorted_Array.c */; };
+		24ED590122E1AAE0001B5151 /* 217_Contains_Duplicate.c in Sources */ = {isa = PBXBuildFile; fileRef = 24ED590022E1AAE0001B5151 /* 217_Contains_Duplicate.c */; };
+		24ED590422E411CA001B5151 /* 066_Plus_One.c in Sources */ = {isa = PBXBuildFile; fileRef = 24ED590322E411CA001B5151 /* 066_Plus_One.c */; };
 		4006377E2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c in Sources */ = {isa = PBXBuildFile; fileRef = 4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */; };
 		4006378122570ECC00B8E5B5 /* 070_Climbing_Stairs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4006378022570ECC00B8E5B5 /* 070_Climbing_Stairs.c */; };
 		40063784225842F100B8E5B5 /* 027_Remove_Element.c in Sources */ = {isa = PBXBuildFile; fileRef = 40063783225842F100B8E5B5 /* 027_Remove_Element.c */; };
@@ -42,6 +45,12 @@
 		2411AA7322C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 350_Intersection_of_Two_Arrays_2.c; sourceTree = "<group>"; };
 		2411AA7522E0AE490057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 122_Best_Time_to_Buy_and_Sell_Stock_2.h; sourceTree = "<group>"; };
 		2411AA7622E0AE490057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 122_Best_Time_to_Buy_and_Sell_Stock_2.c; sourceTree = "<group>"; };
+		2411AA7822E0C5AB0057F972 /* 026_Remove_Duplicates_from_Sorted_Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 026_Remove_Duplicates_from_Sorted_Array.h; sourceTree = "<group>"; };
+		2411AA7922E0C5AB0057F972 /* 026_Remove_Duplicates_from_Sorted_Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 026_Remove_Duplicates_from_Sorted_Array.c; sourceTree = "<group>"; };
+		24ED58FF22E1AAE0001B5151 /* 217_Contains_Duplicate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 217_Contains_Duplicate.h; sourceTree = "<group>"; };
+		24ED590022E1AAE0001B5151 /* 217_Contains_Duplicate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 217_Contains_Duplicate.c; sourceTree = "<group>"; };
+		24ED590222E411CA001B5151 /* 066_Plus_One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 066_Plus_One.h; sourceTree = "<group>"; };
+		24ED590322E411CA001B5151 /* 066_Plus_One.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 066_Plus_One.c; sourceTree = "<group>"; };
 		4006377C2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 011_Container_With_Most_Water.h; sourceTree = "<group>"; };
 		4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 011_Container_With_Most_Water.c; sourceTree = "<group>"; };
 		4006377F22570ECC00B8E5B5 /* 070_Climbing_Stairs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 070_Climbing_Stairs.h; sourceTree = "<group>"; };
@@ -90,29 +99,35 @@
 		40DA4C502230177D003753CA /* Leecode_test */ = {
 			isa = PBXGroup;
 			children = (
-				40871BF9225A2C5300D393AA /* 054_Spiral_Matrix.h */,
-				40871BFA225A2C5300D393AA /* 054_Spiral_Matrix.c */,
-				40063782225842F100B8E5B5 /* 027_Remove_Element.h */,
-				40063783225842F100B8E5B5 /* 027_Remove_Element.c */,
-				4006377F22570ECC00B8E5B5 /* 070_Climbing_Stairs.h */,
-				4006378022570ECC00B8E5B5 /* 070_Climbing_Stairs.c */,
-				4006377C2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.h */,
+				40350AB0223CF4B000337164 /* 002_Add_Two_Numbers.c */,
+				40350AAF223CF4B000337164 /* 002_Add_Two_Numbers.h */,
+				40350AB3223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c */,
+				40350AB2223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.h */,
+				401A20A72246537F006CC82A /* 007_Reverse_Integer.c */,
+				401A20A62246537F006CC82A /* 007_Reverse_Integer.h */,
 				4006377D2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c */,
-				40DA4C512230177D003753CA /* main.c */,
+				4006377C2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.h */,
+				2411AA7922E0C5AB0057F972 /* 026_Remove_Duplicates_from_Sorted_Array.c */,
+				2411AA7822E0C5AB0057F972 /* 026_Remove_Duplicates_from_Sorted_Array.h */,
+				40063783225842F100B8E5B5 /* 027_Remove_Element.c */,
+				40063782225842F100B8E5B5 /* 027_Remove_Element.h */,
+				40871BFA225A2C5300D393AA /* 054_Spiral_Matrix.c */,
+				40871BF9225A2C5300D393AA /* 054_Spiral_Matrix.h */,
+				24ED590322E411CA001B5151 /* 066_Plus_One.c */,
+				24ED590222E411CA001B5151 /* 066_Plus_One.h */,
+				4006378022570ECC00B8E5B5 /* 070_Climbing_Stairs.c */,
+				4006377F22570ECC00B8E5B5 /* 070_Climbing_Stairs.h */,
+				2411AA7622E0AE490057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.c */,
+				2411AA7522E0AE490057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.h */,
 				2411AA6C22BF08410057F972 /* 136_Single_Number.c */,
 				2411AA6E22BF08410057F972 /* 136_Single_Number.h */,
 				2411AA6F22BF08420057F972 /* 189_Rotate_Array.c */,
-				2411AA7222C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.h */,
-				2411AA7322C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c */,
 				2411AA6D22BF08410057F972 /* 189_Rotate_Array.h */,
-				40350AB2223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.h */,
-				40350AB3223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c */,
-				40350AAF223CF4B000337164 /* 002_Add_Two_Numbers.h */,
-				40350AB0223CF4B000337164 /* 002_Add_Two_Numbers.c */,
-				401A20A62246537F006CC82A /* 007_Reverse_Integer.h */,
-				401A20A72246537F006CC82A /* 007_Reverse_Integer.c */,
-				2411AA7522E0AE490057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.h */,
-				2411AA7622E0AE490057F972 /* 122_Best_Time_to_Buy_and_Sell_Stock_2.c */,
+				24ED590022E1AAE0001B5151 /* 217_Contains_Duplicate.c */,
+				24ED58FF22E1AAE0001B5151 /* 217_Contains_Duplicate.h */,
+				2411AA7322C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c */,
+				2411AA7222C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.h */,
+				40DA4C512230177D003753CA /* main.c */,
 			);
 			path = Leecode_test;
 			sourceTree = "<group>";
@@ -177,9 +192,12 @@
 				4006378122570ECC00B8E5B5 /* 070_Climbing_Stairs.c in Sources */,
 				2411AA7022BF08420057F972 /* 136_Single_Number.c in Sources */,
 				40350AB1223CF4B000337164 /* 002_Add_Two_Numbers.c in Sources */,
+				2411AA7A22E0C5AB0057F972 /* 026_Remove_Duplicates_from_Sorted_Array.c in Sources */,
 				40871BFB225A2C5300D393AA /* 054_Spiral_Matrix.c in Sources */,
 				2411AA7122BF08420057F972 /* 189_Rotate_Array.c in Sources */,
+				24ED590122E1AAE0001B5151 /* 217_Contains_Duplicate.c in Sources */,
 				401A20A82246537F006CC82A /* 007_Reverse_Integer.c in Sources */,
+				24ED590422E411CA001B5151 /* 066_Plus_One.c in Sources */,
 				4006377E2255D7AA00B8E5B5 /* 011_Container_With_Most_Water.c in Sources */,
 				40350AB4223CF51F00337164 /* 004_Median_of_Two_Sorted_Arrays.c in Sources */,
 				2411AA7422C8D6C00057F972 /* 350_Intersection_of_Two_Arrays_2.c in Sources */,
