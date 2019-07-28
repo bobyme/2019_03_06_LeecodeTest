@@ -17,6 +17,7 @@
 #include "122_Best_Time_to_Buy_and_Sell_Stock_2.h"
 #include "026_Remove_Duplicates_from_Sorted_Array.h"
 #include "066_Plus_One.h"
+#include "283_Move_Zeroes.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -27,7 +28,8 @@ int main(int argc, const char * argv[]) {
     //test189();
     //test026();
     //test217();
-    test066();
+    //test066();
+    test283();
     return 0;
 }
 
